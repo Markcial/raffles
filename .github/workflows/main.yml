@@ -5,6 +5,9 @@ on:
 jobs:
   publish-winners:
     runs-on: ubuntu-latest
+    env:
+      NEYNAR_API_KEY: ${{ secrets.NEYNAR_API_KEY }}
+      SIGNER_UUID: ${{ secrets.SIGNER_UUID }}
 
     steps:
       - uses: actions/checkout@v4
