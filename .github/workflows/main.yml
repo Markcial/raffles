@@ -5,10 +5,7 @@ on:
 jobs:
   publish-winners:
     runs-on: ubuntu-latest
-    env:
-      NEYNAR_API_KEY: ${{ secrets.NEYNAR_API_KEY }}
-      SIGNER_UUID: ${{ secrets.SIGNER_UUID }}
-
+    environment: neynar
     steps:
       - uses: actions/checkout@v4
       - uses: oven-sh/setup-bun@v1
