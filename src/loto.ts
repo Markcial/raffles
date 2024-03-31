@@ -80,10 +80,3 @@ export function results(prizes: string[], tickets: string[]) {
     [] as { prize: string, winner: string }[]
   )
 }
-
-export function main() {
-  const tickets = prepareTickets()
-  const prizes = preparePrizes()
-  const winners = results(prizes, tickets)
-  console.log(winners)
-}
